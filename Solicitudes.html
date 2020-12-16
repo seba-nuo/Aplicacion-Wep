@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        
+        <label>Rut:</label>
+        <input type="text" name="rut" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
+        <input type="submit" value="Probar rut"><br><br>
+          
+        <label for="nombre">Nombres:</label>
+        <input type="text" id="nombre" nombre="nombre"><br><br>
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" apellido="apellido"><br><br>
+
+        <label for="fechanac">Fecha de Nacimiento:</label>
+        <input type="date" id="fechanac" fechanac="fechanac"><br><br>
+
+        <label>Ciudad:</label>
+        <input list="ciudad">
+             <datalist id="ciudad">
+             <option value="Ancud">
+             <option value="Castro">
+             <option value="Chonchi">
+             <option value="Curaco de Vélez">
+             <option value="Dalcahue">
+             <option value="Puqueldón">  
+             <option value="Quéilen">
+             <option value="Quellón">   
+             <option value="Quinchao">
+             <option value="Calbuco">
+             <option value="Cochamó">
+             <option value="Fresia">
+             <option value="Frutillar">
+             <option value="LLanquihue">
+             <option value="Los Muermos">
+             <option value="Maullín">
+             <option value="Puerto Montt">
+             <option value="Puerto Varas">
+             <option value="Osorno">
+             <option value="Puerto Octay">
+             <option value="Purranque">
+             <option value="Río Negro">
+             <option value="San Juan de la Costa">
+             <option value="San Pablo">
+             <option value="Chaitén">
+             <option value="Futaleufú">
+             <option value="Hualaihué">
+             <option value="Palena">
+             </datalist><br><br>
+      </form>
+
+      <label>Ciudad de Origen:</label>
+      <input list="ciudado">
+           <datalist id="ciudado">
+           <option value="Ancud">
+           <option value="Castro">
+           <option value="Chonchi">
+           <option value="Curaco de Vélez">
+           <option value="Dalcahue">
+           <option value="Puqueldón">  
+           <option value="Quéilen">
+           <option value="Quellón">   
+           <option value="Quinchao">
+           <option value="Calbuco">
+           <option value="Cochamó">
+           <option value="Fresia">
+           <option value="Frutillar">
+           <option value="LLanquihue">
+           <option value="Los Muermos">
+           <option value="Maullín">
+           <option value="Puerto Montt">
+           <option value="Puerto Varas">
+           <option value="Osorno">
+           <option value="Puerto Octay">
+           <option value="Purranque">
+           <option value="Río Negro">
+           <option value="San Juan de la Costa">
+           <option value="San Pablo">
+           <option value="Chaitén">
+           <option value="Futaleufú">
+           <option value="Hualaihué">
+           <option value="Palena">
+           </datalist><br><br>
+    </form>
+
+        <label for="cars">Estado Civil:</label>
+            <select id="estadoc" name="estadoc">
+                <option value="nada"></option>
+                <option value="casad">Casado/a</option>
+                <option value="solter">Soltero/a</option>
+                <option value="viud">Viudo/a</option>
+            </select>
+            
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" telefono="telefono"><br><br>
+
+
+</body>
+</html> 
