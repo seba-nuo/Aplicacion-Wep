@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Rut:</label>
+        <input type="text" name="rut" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
+        <input type="submit" value="Probar rut"><br><br>
+          
+        <label for="nombre">Nombres:</label>
+        <input type="text" id="nombre" nombre="nombre"><br><br>
+
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" apellido="apellido"><br><br>
+
+        <label for="fechanac">Fecha de Nacimiento:</label>
+        <input type="date" id="fechanac" fechanac="fechanac"><br><br>
+        
+        <label>Ciudad:</label>
+        <input list="ciudad">
+             <datalist id="ciudad">
+             <option value="Ancud">
+             <option value="Castro">
+             <option value="Chonchi">
+             <option value="Curaco de Vélez">
+             <option value="Dalcahue">
+             <option value="Puqueldón">  
+             <option value="Quéilen">
+             <option value="Quellón">   
+             <option value="Quinchao">
+             <option value="Calbuco">
+             <option value="Cochamó">
+             <option value="Fresia">
+             <option value="Frutillar">
+             <option value="LLanquihue">
+             <option value="Los Muermos">
+             <option value="Maullín">
+             <option value="Puerto Montt">
+             <option value="Puerto Varas">
+             <option value="Osorno">
+             <option value="Puerto Octay">
+             <option value="Purranque">
+             <option value="Río Negro">
+             <option value="San Juan de la Costa">
+             <option value="San Pablo">
+             <option value="Chaitén">
+             <option value="Futaleufú">
+             <option value="Hualaihué">
+             <option value="Palena">
+             </datalist><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" direccion="direccion"><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" telefono="telefono"><br><br>
+        
+        <label for="afp">AFP:</label>
+            <select id="afp" name="afp">
+                <option value="capital">Capital</option>
+                <option value="cuprum">Cuprum</option>
+                <option value="habitad">Hábitad</option>
+                <option value="modelo">Modelo</option>
+                <option value="planvital">PlanVital</option>
+                <option value="provida">ProVida</option>
+            </select>
+
+        <label for="salud">Inst. Salud:</label>    
+            <select id="salud" name="salud">
+                <option value="fonasa">Fonasa</option>
+                <option value="isapreb">Isapre Banmedica</option>
+                <option value="isaprecon">Isapre Consalud</option>
+                <option value="isaprecol">Isapre Colmena</option>
+                <option value="isaprecruz">Isapre CruzBlanca</option>
+                <option value="isapremasv">Isapre MasVida</option>
+                <option value="isaprevt">Isapre VidaTres</option>
+            </select><br><br>
+
+        <label for="carg">Cargo:</label>    
+            <select id="carg" name="carg">
+                <option value="docentepie">Docente P.I.E.</option>
+                <option value="docenteaula">Docente de Aula</option>
+                <option value="docentedir">Docente Directivo</option>
+                <option value="profesionalsep">Profesional S.E.P.</option>
+            </select><br><br>
+        
+            <label for="fdesde">Desde:</label>
+            <input type="date" id="fdesde" fechanac="fdesde">
+    
+            <label for="fhasta">Hasta:</label>
+            <input type="date" id="fhasta" fechanac="fhasta"><br><br>
+    
+            <label for="horas">Horas:</label>
+            <input type="number" id="horas" horas="horas"><br><br>
+            
+            <label for="contrato">Tipo de Contrato:</label>    
+            <select id="contrato" name="contrato">
+                <option value="contrata">Contrata</option>
+                <option value="reemplazo">Reemplazo</option>
+            </select><br><br>
+
+            <label for="tramo">Tramo de Encasillamiento:</label>    
+            <select id="tramo" name="tramo">
+                <option value="docentepie">Docente P.I.E.</option>
+                <option value="docenteaula">Docente de Aula</option>
+                <option value="docentedir">Docente Directivo</option>
+                <option value="profesionalsep">Profesional S.E.P.</option>
+            </select><br><br>
+
+            <label for="modalidad">Modalidad:</label>    
+            <select id="modalidad" name="modalidad">
+                <option value="docentepie">Docente P.I.E.</option>
+                <option value="docenteaula">Docente de Aula</option>
+                <option value="docentedir">Docente Directivo</option>
+                <option value="profesionalsep">Profesional S.E.P.</option>
+            </select><br><br>
+
+            <label for="bienios">Nº de Bienios:</label>
+        <input type="number" id="bienios" bienios="bienios"><br><br>
+            
+</body>
+</html>
