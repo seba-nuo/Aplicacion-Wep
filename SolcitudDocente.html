@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
     <label>Rut:</label>
         <input type="text" name="rut" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
         <input type="submit" value="Probar rut"><br><br>
@@ -102,12 +103,22 @@
                 <option value="reemplazo">Reemplazo</option>
             </select><br><br>
 
+            <label for="motivo">Motivo:</label>    
+            <select id="motivo" name="motivo">
+                <option value="planesestudio">Cumplimiento Planes y Programas de Estudio.</option>
+                <option value="decreto170">Cumplimiento Decreto 170.</option>
+                <option value="pme">Cumplimiento PME.</option>
+                
+            </select><br><br>
+
             <label for="tramo">Tramo de Encasillamiento:</label>    
             <select id="tramo" name="tramo">
-                <option value="docentepie">Docente P.I.E.</option>
-                <option value="docenteaula">Docente de Aula</option>
-                <option value="docentedir">Docente Directivo</option>
-                <option value="profesionalsep">Profesional S.E.P.</option>
+                <option value="inicial">Inicial</option>
+                <option value="acceso">Acceso</option>
+                <option value="temprano">Temprano</option>
+                <option value="avanzado">Avanzado</option>
+                <option value="exp1">Experto 1</option>
+                <option value="exp2">Experto 2</option>
             </select><br><br>
 
             <label for="modalidad">Modalidad:</label>    
@@ -120,6 +131,11 @@
 
             <label for="bienios">Nº de Bienios:</label>
         <input type="number" id="bienios" bienios="bienios"><br><br>
+
+        <label>Breve Descripcion de la Funcion:</label><br>
+        <textarea name="descripcion" rows="5" cols="60">
             
+            </textarea>
+        </form>
 </body>
 </html>
