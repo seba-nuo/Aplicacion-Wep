@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+		<nav class="navegacion">
+			<ul class="menu">
+				
+				<li><a href="#">Archivos</a></li>
+				<li><a href="#">Servicios</a>
+					<ul class="submenu">
+						<li><a href="#">Servicio #1</a></li>
+						<li><a href="#">Servicio #2</a></li>
+						<li><a href="#">Servicio #3</a></li>
+					</ul>
+				</li>
+
+				
+				
+			</ul>
+		</nav>
+
+		
+	</header>
+
+
     <form>
     <label>Rut:</label>
         <input type="text" name="rut" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
