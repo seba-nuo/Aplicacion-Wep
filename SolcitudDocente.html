@@ -30,22 +30,22 @@
 	</header>
 
 
-    <form>
-    <label>Rut:</label>
-        <input type="text" name="rut" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
+    <form class="form">
+    <label class="form-label">Rut:</label>
+        <input type="text" name="rut" class="form-input" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
         <input type="submit" value="Probar rut"><br><br>
           
-        <label for="nombre">Nombres:</label>
-        <input type="text" id="nombre" nombre="nombre"><br><br>
+        <label for="nombre" class="form-label">Nombres:</label>
+        <input type="text" id="nombre" nombre="nombre" class="form-input"><br><br>
 
-        <label for="apellido">Apellidos:</label>
-        <input type="text" id="apellido" apellido="apellido"><br><br>
+        <label for="apellido" class="form-label">Apellidos:</label>
+        <input type="text" id="apellido" apellido="apellido" class="form-input"><br><br>
 
-        <label for="fechanac">Fecha de Nacimiento:</label>
-        <input type="date" id="fechanac" fechanac="fechanac"><br><br>
+        <label for="fechanac" class="form-label">Fecha de Nacimiento:</label>
+        <input type="date" id="fechanac" fechanac="fechanac"class="form-input"><br><br>
         
-        <label>Ciudad:</label>
-        <input list="ciudad">
+        <label class="form-label">Ciudad:</label>
+        <input list="ciudad" class="form-input">
              <datalist id="ciudad">
              <option value="Ancud">
              <option value="Castro">
@@ -77,14 +77,14 @@
              <option value="Palena">
              </datalist><br><br>
 
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" direccion="direccion"><br><br>
+        <label for="direccion" class="form-label">Dirección:</label>
+        <input type="text" id="direccion" direccion="direccion" class="form-input"><br><br>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" telefono="telefono"><br><br>
+        <label for="telefono" class="form-label">Teléfono:</label>
+        <input type="tel" id="telefono" telefono="telefono" class="form-input"><br><br>
         
-        <label for="afp">AFP:</label>
-            <select id="afp" name="afp">
+        <label for="afp" class="form-label">AFP:</label>
+            <select id="afp" name="afp" class="form-input">
                 <option value="capital">Capital</option>
                 <option value="cuprum">Cuprum</option>
                 <option value="habitad">Hábitad</option>
@@ -93,8 +93,8 @@
                 <option value="provida">ProVida</option>
             </select>
 
-        <label for="salud">Inst. Salud:</label>    
-            <select id="salud" name="salud">
+        <label for="salud" class="form-label">Inst. Salud:</label>    
+            <select id="salud" name="salud" class="form-input">
                 <option value="fonasa">Fonasa</option>
                 <option value="isapreb">Isapre Banmedica</option>
                 <option value="isaprecon">Isapre Consalud</option>
@@ -104,39 +104,39 @@
                 <option value="isaprevt">Isapre VidaTres</option>
             </select><br><br>
 
-        <label for="carg">Cargo:</label>    
-            <select id="carg" name="carg">
+        <label for="carg" class="form-label">Cargo:</label>    
+            <select id="carg" name="carg" class="form-input">
                 <option value="docentepie">Docente P.I.E.</option>
                 <option value="docenteaula">Docente de Aula</option>
                 <option value="docentedir">Docente Directivo</option>
                 <option value="profesionalsep">Profesional S.E.P.</option>
             </select><br><br>
         
-            <label for="fdesde">Desde:</label>
-            <input type="date" id="fdesde" fechanac="fdesde">
+            <label for="fdesde" class="form-label">Desde:</label>
+            <input type="date" id="fdesde" fechanac="fdesde" class="form-input">
     
-            <label for="fhasta">Hasta:</label>
-            <input type="date" id="fhasta" fechanac="fhasta"><br><br>
+            <label for="fhasta" class="form-label">Hasta:</label>
+            <input type="date" id="fhasta" fechanac="fhasta" class="form-input"><br><br>
     
-            <label for="horas">Horas:</label>
-            <input type="number" id="horas" horas="horas"><br><br>
+            <label for="horas" class="form-label">Horas:</label>
+            <input type="number" id="horas" horas="horas" class="form-input"><br><br>
             
-            <label for="contrato">Tipo de Contrato:</label>    
-            <select id="contrato" name="contrato">
+            <label for="contrato" class="form-label">Tipo de Contrato:</label>    
+            <select id="contrato" name="contrato" class="form-input">
                 <option value="contrata">Contrata</option>
                 <option value="reemplazo">Reemplazo</option>
             </select><br><br>
 
-            <label for="motivo">Motivo:</label>    
-            <select id="motivo" name="motivo">
+            <label for="motivo" class="form-label">Motivo:</label>    
+            <select id="motivo" name="motivo" class="form-input">
                 <option value="planesestudio">Cumplimiento Planes y Programas de Estudio.</option>
                 <option value="decreto170">Cumplimiento Decreto 170.</option>
                 <option value="pme">Cumplimiento PME.</option>
                 
             </select><br><br>
 
-            <label for="tramo">Tramo de Encasillamiento:</label>    
-            <select id="tramo" name="tramo">
+            <label for="tramo" class="form-label">Tramo de Encasillamiento:</label>    
+            <select id="tramo" name="tramo" class="form-input">
                 <option value="inicial">Inicial</option>
                 <option value="acceso">Acceso</option>
                 <option value="temprano">Temprano</option>
@@ -145,17 +145,17 @@
                 <option value="exp2">Experto 2</option>
             </select><br><br>
 
-            <label for="modalidad">Modalidad:</label>    
-            <select id="modalidad" name="modalidad">
+            <label for="modalidad" class="form-label">Modalidad:</label>    
+            <select id="modalidad" name="modalidad" class="form-input">
                 <option value="docentepie">Básica</option>
                 <option value="docenteaula">Media</option>
             </select><br><br>
 
-            <label for="bienios">Nº de Bienios:</label>
-        <input type="number" id="bienios" bienios="bienios"><br><br>
+            <label for="bienios" class="form-label">Nº de Bienios:</label>
+        <input type="number" id="bienios" bienios="bienios" class="form-input"><br><br>
 
-        <label>Breve Descripcion de la Funcion:</label><br>
-        <textarea name="descripcion" rows="5" cols="60">
+        <label class="form-label">Breve Descripcion de la Funcion:</label><br>
+        <textarea name="descripcion" rows="5" cols="60" class="form-input">
             
             </textarea>
         </form>
