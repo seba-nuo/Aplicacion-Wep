@@ -29,7 +29,7 @@
 		
 	</header>
 
-
+    <div>
     <form class="form">
     <label class="form-label">Rut:</label>
         <input type="text" name="rut" class="form-input" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
@@ -38,8 +38,11 @@
         <label for="nombre" class="form-label">Nombres:</label>
         <input type="text" id="nombre" nombre="nombre" class="form-input"><br><br>
 
-        <label for="apellido" class="form-label">Apellidos:</label>
-        <input type="text" id="apellido" apellido="apellido" class="form-input"><br><br>
+        <label for="apellidop" class="form-label">Apellido Paterno:</label>
+        <input type="text" id="apellidop" apellido="apellidop" class="form-input"><br><br>
+
+        <label for="apellidom" class="form-label">Apellido Materno:</label>
+        <input type="text" id="apellidom" apellido="apellidom" class="form-input"><br><br>
 
         <label for="fechanac" class="form-label">Fecha de Nacimiento:</label>
         <input type="date" id="fechanac" fechanac="fechanac"class="form-input"><br><br>
@@ -121,11 +124,11 @@
             <label for="horas" class="form-label">Horas:</label>
             <input type="number" id="horas" horas="horas" class="form-input"><br><br>
             
-            <label for="contrato" class="form-label">Tipo de Contrato:</label>    
-            <select id="contrato" name="contrato" class="form-input">
-                <option value="contrata">Contrata</option>
-                <option value="reemplazo">Reemplazo</option>
-            </select><br><br>
+            <label class="form-label">Tipo de Contrato:</label>    
+            <input type="button" value="contrata" onclick="contrata();">
+            <input type="button" value="reemplazo" onclick="reemplazo();">
+
+            <br><br>
 
             <label for="motivo" class="form-label">Motivo:</label>    
             <select id="motivo" name="motivo" class="form-input">
@@ -158,6 +161,61 @@
         <textarea name="descripcion" rows="5" cols="60" class="form-input">
             
             </textarea>
+
+            
         </form>
+    </div>
+        <div id="ausente">
+
+            <label class="form-label">Rut:</label>
+            <input type="text" name="rutausente" class="form-input" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
+            <input type="submit" value="Probar rut"><br><br>
+          
+            <label for="apellidopausente" class="form-label">Apellido Paterno:</label>
+            <input type="text" id="apellidopausente" apellido="apellidopausente" class="form-input"><br><br>
+    
+            <label for="apellidomausente" class="form-label">Apellido Materno:</label>
+            <input type="text" id="apellidomausente" apellido="apellidomausente" class="form-input"><br><br>
+
+            <label for="nombreausente" class="form-label">Nombres:</label>
+            <input type="text" id="nombreausente" nombre="nombreausente" class="form-input"><br><br>
+
+            <label for="cargoausente" class="form-label">Cargo:</label>    
+            <select id="cargoausente" name="cargoausente" class="form-input">
+                <option value="docentepie">Docente P.I.E.</option>
+                <option value="docenteaula">Docente de Aula</option>
+                <option value="docentedir">Docente Directivo</option>
+                <option value="profesionalsep">Profesional S.E.P.</option>
+            </select><br><br>
+
+            <label for="motivoausencia" class="form-label">Motivo de la Asencia:</label>    
+            <select id="motivoausencia" name="motivoausencia" class="form-input">
+                <option value="licenciam">Licencia Medica</option>
+                <option value="ist">Permiso IST</option>
+                <option value="licenciampren">Licencia Medica Pre-Natal</option>
+                <option value="licenciampostn">Licencia Medica Post-Natal</option>
+                <option value="postnp">Post-Natal Parental</option>
+                <option value="cambiof">Cambio de Funcionario</option>
+                <option value="isumaria">Investigacion Sumaria</option>
+                <option value="psingoce">Permiso sin goce de sueldo</option>
+                <option value="pcongoce">Permiso con goce de sueldo</option>
+            </select><br><br>
+
+            <label for="horascontrato" class="form-label">Horas de Contrato:</label>
+            <input type="number" id="horascontrato" horas="horascontrato" class="form-input"><br><br>
+        
+            <label for="finicioreposo" class="form-label">Fecha Inicio de Reposo:</label>
+            <input type="date" id="finicioreposo" fechanac="finicioreposo" class="form-input">
+
+            <label for="ndlicencia" class="form-label">Número de Licencia:</label>
+            <input type="number" id="ndlicencia" horas="ndlicencia" class="form-input"><br><br>
+
+            <label for="ndreposo" class="form-label">Número días de Reposo:</label>
+            <input type="number" id="ndreposo" horas="ndreposo" class="form-input"><br><br>
+
+            
+        </div>
+        <script type="text/javascript" src="SolicitudDo.js">
+        </script>
 </body>
 </html>
