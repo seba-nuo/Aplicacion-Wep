@@ -92,13 +92,15 @@ header{
 
 .form{
 	background: rgba(255, 255, 255, 0.6);
-	width: 70%;
+	width: 75%;
 	max-width: 25000px;
 	margin: auto;
-	padding: 25px 100px;
+	padding: 25px 70px;
 	margin-top: 50px;
 	padding-bottom: 30px;
-	border-radius: 20px;
+	border-radius: 10px;
+	word-spacing: 5px;
+	
 }
 
 
@@ -108,5 +110,27 @@ header{
 	font-size: 16px;
 	font-family: Poppins; 
 	position: relative;
+	
+	
 }
 
+
+.aus {
+	background: rgba(255, 255, 255, 0.6);
+	width: 75%;
+	max-width: 25000px;
+	margin: auto;
+	padding: 25px 70px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	border-radius: 10px;
+	word-spacing: 5px;
+}
+
+.aus {
+	display: ruby;
+	color: #000000;
+	font-size: 16px;
+	font-family: Poppins; 
+	position: relative;
+}

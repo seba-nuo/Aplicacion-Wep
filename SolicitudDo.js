@@ -5,3 +5,6 @@ function contrata(){
 function reemplazo(){
     document.getElementById('ausente').style.display="block";
  }
+
+ 
+ 

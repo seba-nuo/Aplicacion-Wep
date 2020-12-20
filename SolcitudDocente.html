@@ -15,7 +15,7 @@
 				<li><a href="#">Archivos</a></li>
 				<li><a href="#">Servicios</a>
 					<ul class="submenu">
-						<li><a href="#">Servicio #1</a></li>
+						<li><a href="Index.html">Servicio #1</a></li>
 						<li><a href="#">Servicio #2</a></li>
 						<li><a href="#">Servicio #3</a></li>
 					</ul>
@@ -33,19 +33,19 @@
     <form class="form">
     <label class="form-label">Rut:</label>
         <input type="text" name="rut" class="form-input" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
-        <input type="submit" value="Probar rut"><br><br>
+        <input type="submit" value="Probar rut">
           
         <label for="nombre" class="form-label">Nombres:</label>
-        <input type="text" id="nombre" nombre="nombre" class="form-input"><br><br>
+        <input type="text" id="nombre" nombre="nombre" class="form-input">
 
         <label for="apellidop" class="form-label">Apellido Paterno:</label>
-        <input type="text" id="apellidop" apellido="apellidop" class="form-input"><br><br>
+        <input type="text" id="apellidop" apellido="apellidop" class="form-input">
 
         <label for="apellidom" class="form-label">Apellido Materno:</label>
-        <input type="text" id="apellidom" apellido="apellidom" class="form-input"><br><br>
+        <input type="text" id="apellidom" apellido="apellidom" class="form-input"><br><br><br>
 
         <label for="fechanac" class="form-label">Fecha de Nacimiento:</label>
-        <input type="date" id="fechanac" fechanac="fechanac"class="form-input"><br><br>
+        <input type="date" id="fechanac" fechanac="fechanac"class="form-input">
         
         <label class="form-label">Ciudad:</label>
         <input list="ciudad" class="form-input">
@@ -78,13 +78,13 @@
              <option value="Futaleufú">
              <option value="Hualaihué">
              <option value="Palena">
-             </datalist><br><br>
+             </datalist>
 
         <label for="direccion" class="form-label">Dirección:</label>
-        <input type="text" id="direccion" direccion="direccion" class="form-input"><br><br>
+        <input type="text" id="direccion" direccion="direccion" class="form-input">
 
         <label for="telefono" class="form-label">Teléfono:</label>
-        <input type="tel" id="telefono" telefono="telefono" class="form-input"><br><br>
+        <input type="tel" id="telefono" telefono="telefono" class="form-input"><br><br><br>
         
         <label for="afp" class="form-label">AFP:</label>
             <select id="afp" name="afp" class="form-input">
@@ -105,7 +105,7 @@
                 <option value="isaprecruz">Isapre CruzBlanca</option>
                 <option value="isapremasv">Isapre MasVida</option>
                 <option value="isaprevt">Isapre VidaTres</option>
-            </select><br><br>
+            </select>
 
         <label for="carg" class="form-label">Cargo:</label>    
             <select id="carg" name="carg" class="form-input">
@@ -113,22 +113,22 @@
                 <option value="docenteaula">Docente de Aula</option>
                 <option value="docentedir">Docente Directivo</option>
                 <option value="profesionalsep">Profesional S.E.P.</option>
-            </select><br><br>
+            </select>
         
             <label for="fdesde" class="form-label">Desde:</label>
             <input type="date" id="fdesde" fechanac="fdesde" class="form-input">
     
             <label for="fhasta" class="form-label">Hasta:</label>
-            <input type="date" id="fhasta" fechanac="fhasta" class="form-input"><br><br>
+            <input type="date" id="fhasta" fechanac="fhasta" class="form-input">
     
             <label for="horas" class="form-label">Horas:</label>
-            <input type="number" id="horas" horas="horas" class="form-input"><br><br>
+            <input type="number" id="horas" horas="horas" class="form-input"><br><br><br>
             
             <label class="form-label">Tipo de Contrato:</label>    
             <input type="button" value="contrata" onclick="contrata();">
             <input type="button" value="reemplazo" onclick="reemplazo();">
 
-            <br><br>
+            
 
             <label for="motivo" class="form-label">Motivo:</label>    
             <select id="motivo" name="motivo" class="form-input">
@@ -136,7 +136,7 @@
                 <option value="decreto170">Cumplimiento Decreto 170.</option>
                 <option value="pme">Cumplimiento PME.</option>
                 
-            </select><br><br>
+            </select>
 
             <label for="tramo" class="form-label">Tramo de Encasillamiento:</label>    
             <select id="tramo" name="tramo" class="form-input">
@@ -146,16 +146,16 @@
                 <option value="avanzado">Avanzado</option>
                 <option value="exp1">Experto 1</option>
                 <option value="exp2">Experto 2</option>
-            </select><br><br>
+            </select>
 
             <label for="modalidad" class="form-label">Modalidad:</label>    
             <select id="modalidad" name="modalidad" class="form-input">
                 <option value="docentepie">Básica</option>
                 <option value="docenteaula">Media</option>
-            </select><br><br>
+            </select><br><br><br>
 
             <label for="bienios" class="form-label">Nº de Bienios:</label>
-        <input type="number" id="bienios" bienios="bienios" class="form-input"><br><br>
+        <input type="number" id="bienios" bienios="bienios" class="form-input"><br><br><br>
 
         <label class="form-label">Breve Descripcion de la Funcion:</label><br>
         <textarea name="descripcion" rows="5" cols="60" class="form-input">
@@ -165,17 +165,17 @@
             
         </form>
     </div>
-        <div id="ausente">
+        <div id="ausente" class="aus">
 
             <label class="form-label">Rut:</label>
             <input type="text" name="rutausente" class="form-input" required="required" pattern="\d{3,8}-[\d|kK]{1}" title="Debe ser un Rut válido"/>
-            <input type="submit" value="Probar rut"><br><br>
+            <input type="submit" value="Probar rut">
           
             <label for="apellidopausente" class="form-label">Apellido Paterno:</label>
-            <input type="text" id="apellidopausente" apellido="apellidopausente" class="form-input"><br><br>
+            <input type="text" id="apellidopausente" apellido="apellidopausente" class="form-input">
     
             <label for="apellidomausente" class="form-label">Apellido Materno:</label>
-            <input type="text" id="apellidomausente" apellido="apellidomausente" class="form-input"><br><br>
+            <input type="text" id="apellidomausente" apellido="apellidomausente" class="form-input">
 
             <label for="nombreausente" class="form-label">Nombres:</label>
             <input type="text" id="nombreausente" nombre="nombreausente" class="form-input"><br><br>
@@ -186,7 +186,7 @@
                 <option value="docenteaula">Docente de Aula</option>
                 <option value="docentedir">Docente Directivo</option>
                 <option value="profesionalsep">Profesional S.E.P.</option>
-            </select><br><br>
+            </select>
 
             <label for="motivoausencia" class="form-label">Motivo de la Asencia:</label>    
             <select id="motivoausencia" name="motivoausencia" class="form-input">
@@ -199,8 +199,7 @@
                 <option value="isumaria">Investigacion Sumaria</option>
                 <option value="psingoce">Permiso sin goce de sueldo</option>
                 <option value="pcongoce">Permiso con goce de sueldo</option>
-            </select><br><br>
-
+            </select>
             <label for="horascontrato" class="form-label">Horas de Contrato:</label>
             <input type="number" id="horascontrato" horas="horascontrato" class="form-input"><br><br>
         
@@ -208,10 +207,10 @@
             <input type="date" id="finicioreposo" fechanac="finicioreposo" class="form-input">
 
             <label for="ndlicencia" class="form-label">Número de Licencia:</label>
-            <input type="number" id="ndlicencia" horas="ndlicencia" class="form-input"><br><br>
+            <input type="number" id="ndlicencia" horas="ndlicencia" class="form-input">
 
             <label for="ndreposo" class="form-label">Número días de Reposo:</label>
-            <input type="number" id="ndreposo" horas="ndreposo" class="form-input"><br><br>
+            <input type="number" id="ndreposo" horas="ndreposo" class="form-input">
 
             
         </div>
