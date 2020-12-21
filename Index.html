@@ -4,23 +4,24 @@
     <meta charset="utf-8">
     <title>Login Form Design One | Fazt</title>
     <link rel="stylesheet" href="/css/login.css">
-    <script src="login.js"></script>
   </head>
   <body>
 
     <div class="login-box">
       <img src="img/logo.png" class="avatar" alt="Avatar Image">
       <h1>Iniciar Sesión</h1>
-      <form>
+
+      <form onsubmit="event.preventDefault()">
         
-        <label  id="usuario">Usuario</label>
-        <input type="text" placeholder="Nombre de Usuario">
+        <label for="usuario">Usuario</label>
+        <input id="usuario" type="text" placeholder="Nombre de Usuario">
         
-        <label  id="contraseña">Contraseña</label>
-        <input type="password" placeholder="*******************">
-        <button  type="submit" style="width: 100%;">Conectarse</button>
-       
+        <label for="contraseña">Contraseña</label>
+        <input id="contraseña" type="password" placeholder="*******************">
+        <button type="submit" style="width: 100%;" onclick="redirigirUsuario()">Conectarse</button>
+        
       </form>
     </div>
+    <script src="/js/login.js"></script>
   </body>
 </html>
