@@ -34,7 +34,7 @@ async function rellenarDatos(){
 
 // fetch es una funcion asincrona, para usarla tiene que estar en otra funcion async al igual que .json()
 async function buscarProfesPorRut( rut ){
-   let response = await fetch("http://64.225.53.176:8000/api/v0/profes/")
+   let response = await fetch("http://64.225.53.176:8080/api/v0/profes/")
    let resToJSON = await response.json()
    let next = resToJSON.next
    let results = resToJSON.results

@@ -3,7 +3,7 @@ async function redirigirUsuario(){
     let nombreUsuario = document.getElementById("usuario").value
     let contraseñaUsuario = document.getElementById("contraseña").value
 
-    let res = await fetch("http://64.225.53.176:8000/api/v0/perfil/")
+    let res = await fetch("http://64.225.53.176:8080/api/v0/perfil/").catch(err => console.log(err))
     let perfiles = await res.json()
 
     let usuario = await validarUsuario(perfiles.results, nombreUsuario, contraseñaUsuario)
