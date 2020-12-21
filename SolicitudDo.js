@@ -16,7 +16,9 @@ async function rellenarDatos(){
    let ciudad = document.getElementById("ciudad")
    let direccion = document.getElementById("direccion")
    let telefono = document.getElementById("telefono")
-   
+   let afp = document.getElementById("afp")
+   let salud = document.getElementById("salud")
+
    let profe = await buscarProfesPorRut(rut)
 
    nombre.value = profe.nombre
@@ -26,6 +28,8 @@ async function rellenarDatos(){
    ciudad.value = profe.ciudad
    direccion.value = profe.direccion
    telefono.value = profe.telefono
+   afp.value = profe.afp
+   salud.value = profe.isapre
 }
 
 // fetch es una funcion asincrona, para usarla tiene que estar en otra funcion async al igual que .json()
